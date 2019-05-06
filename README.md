@@ -11,7 +11,11 @@ There are 2 main services:
     - https://docs.google.com/spreadsheets/d/1P2cYMVV_SP4wvQj2bNlFquLrc6KR-yjtWeymgieVfgY/edit#gid=0
 
 --------------------------------------------------------------------------
+<<<<<<< HEAD
 TEST-3
+=======
+
+>>>>>>> e155240... Add files via upload
 * Setup
     - Add employees through: /employees
     - Add rotations through: /rotations
