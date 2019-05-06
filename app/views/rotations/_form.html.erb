@@ -1,0 +1,32 @@
+<%= form_with(model: rotation, local: true) do |form| %>
+    <% if rotation.errors.any? %>
+        <div id="error_explanation">
+            <h2><%= pluralize(rotation.errors.count, "error") %> prohibited this rotation from being saved:</h2>
+
+            <ul>
+                <% rotation.errors.full_messages.each do |message| %>
+                    <li><%= message %></li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+        <%= form.label :name %><br/>
+        <%= form.text_field :name %>
+    </div>
+
+    <div class="field">
+        <%= form.label :require_min %><br/>
+        <%= form.text_field :require_min %>
+    </div>
+
+    <div class="field">
+        <%= form.label :require_max %><br/>
+        <%= form.text_field :require_max %>
+    </div>
+
+    <div class="actions">
+        <%= form.submit %>
+    </div>
+<% end %>

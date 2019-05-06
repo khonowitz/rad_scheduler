@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<div class="field">
+    Name: <%= @rotation.name %>
+</div>
+
+<div class="field">
+    Requirement Min: <%= @rotation.require_min %>
+</div>
+
+<div class="field">
+    Requirement Max: <%= @rotation.require_max %>
+</div>
+
+<%= link_to 'Edit', edit_rotation_path(@rotation) %> |
+<%= link_to 'Back', rotations_path %>

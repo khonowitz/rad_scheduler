@@ -1,0 +1,37 @@
+<h1>Editing Employee</h1>
+
+<%= form_with(model: @employee, scope: :employee, url: employee_path(@employee), local: true) do |form| %>
+    <% if @employee.errors.any? %>
+        <div id="error_explanation">
+            <h2><%= pluralize(employee.errors.count, "error") %> prohibited this employee from being saved:</h2>
+
+            <ul>
+                <% employee.errors.full_messages.each do |message| %>
+                    <li><%= message %></li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+        <%= form.label :first_name %><br/>
+        <%= form.text_field :first_name %>
+    </div>
+
+    <div class="field">
+        <%= form.label :last_name %><br/>
+        <%= form.text_field :last_name %>
+    </div>
+
+    <div class="field">
+        <%= form.label :pgy %><br/>
+        <%= form.text_field :pgy %>
+    </div>
+
+    <div class="actions">
+        <%= form.submit %>
+    </div>
+<% end %>
+
+<%= link_to 'Show', employee_path %> |
+<%= link_to 'Back', employees_path %>
