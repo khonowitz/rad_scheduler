@@ -4,6 +4,7 @@ class EmployeesController < ApplicationController
     # GET /employees
     # GET /employees.json
     def index
+      puts "employee"
         @employees = Employee.all
     end
 
