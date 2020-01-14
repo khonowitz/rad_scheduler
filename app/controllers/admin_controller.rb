@@ -1,6 +1,9 @@
 class AdminController < ApplicationController
   puts "admin"
 
+  def one
+    
+  end
   def three
     
   end
