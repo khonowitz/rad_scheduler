@@ -11,4 +11,7 @@ class AdminController < ApplicationController
   def four
     
   end
+  def three
+
+  end
 end
