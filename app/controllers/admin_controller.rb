@@ -5,6 +5,9 @@ class AdminController < ApplicationController
     
   end
 
+  def five
+    
+  end
   def four
     
   end
