@@ -4,6 +4,7 @@ class AdminController < ApplicationController
   def one
     
   end
+
   def three
     
   end
@@ -11,9 +12,11 @@ class AdminController < ApplicationController
   def five
     
   end
+
   def four
     
   end
+
   def three
 
   end
